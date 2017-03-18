@@ -20,5 +20,12 @@ define('DBPASS', '');
 // Database Name
 define('DBNAME', '');
 ```
+
+Inside `.htaccess` file change the URL of Errors, Example below:
+```htaccess
+ErrorDocument 404 http://localhost/project_mvc/error/page_404/
+ErrorDocument 401 http://localhost/project_mvc/error/page_401/
+```
+
 > This Project will be updated.
 > Copyright 2017 [Emmanuel See Te](https://emmanuelseete.xyz)
