@@ -1,9 +1,33 @@
+cache:
+  directories:
+    - vendor
+    - node_modules
+    - $HOME/.yarn-cache
+
+sudo: true
+
 language: php
+
 php:
   - '5.4'
   - '5.5'
   - '5.6'
   - '7.0'
   - '7.1'
-  - hhvm
-  - nightly
+
+matrix:
+  fast_finish: true
+
+env:
+  global:
+    - DB_USERNAME=root
+    - SLACK_ENDPOINT=http://myconan.net/null/
+
+before_install:
+  - sudo ./bin/mysql_debian_install
+  - nvm install 6.9
+  - nvm use 6.9
+  - ./bin/db_setup.sh
+  - ./build.sh
+
+script: ./vendor/bin/phpunit
