@@ -1,8 +1,10 @@
-![alt text](https://github.com/Twiistrz/Project-MVC/blob/master/assets/img/logo.png)
+# MVC
+-----------
+Model - View - Controller from scratch
 
 Requirements
 ------------
-- A PHP 7.0 (or equivalent) environment
+- PHP 5.5+
 - MySQL 5.7+
 
 Deploying
