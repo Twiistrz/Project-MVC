@@ -1,5 +1,6 @@
-![alt tag](https://github.com/Twiistrz/Project-MVC/blob/master/assets/img/logo.png)
-Model - View - Controller
+![alt text](https://github.com/Twiistrz/Project-MVC/blob/master/assets/img/logo.png)
+
+
 
 Use `database.sql` to create a table in your database and edit `config/database.php` file.
 ```php
