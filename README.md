@@ -2,8 +2,8 @@
 
 Requirements
 ------------
-A PHP 7.0 (or equivalent) environment
-MySQL 5.7+
+- A PHP 7.0 (or equivalent) environment
+- MySQL 5.7+
 
 Deploying
 ------------
