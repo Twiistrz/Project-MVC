@@ -1,5 +1,4 @@
 # MVC
------------
 Model - View - Controller from scratch
 
 Requirements
