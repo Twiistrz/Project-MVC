@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 18, 2017 at 03:46 AM
+-- Generation Time: Mar 18, 2017 at 04:04 AM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 5.6.30
 
@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `data` (
   `id` int(11) NOT NULL,
-  `text` varchar(255) NOT NULL
+  `text` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -36,11 +36,12 @@ CREATE TABLE `data` (
 --
 
 INSERT INTO `data` (`id`, `text`) VALUES
-(1, 'â”—|âˆµ|â”“é‡‘æ›œæ—¥ã®ãŠã¯ã‚ˆã†ï¼HoneyWorks feat.GUMI'),
-(2, 'â”—|âˆµ|â”“ã‚»ãƒ„ãƒŠãƒˆãƒªãƒƒãƒ—ï¼HoneyWorks REMIX feat.é¡éŸ³ãƒ¬ãƒ³'),
-(3, 'â”—|âˆµ|â”“å‰ç”°ã€å®¶å‡ºã™ã‚‹ã£ã¦ã‚ˆï¼HoneyWorks feat.åˆéŸ³ãƒŸã‚¯'),
-(4, 'â”—|âˆµ|â”“ãƒ©ã‚ºãƒ™ãƒªãƒ¼ï¼Šãƒ¢ãƒ³ã‚¹ã‚¿ãƒ¼ï¼HoneyWorks feat.åˆéŸ³ãƒŸã‚¯'),
-(5, 'â”—|âˆµ|â”“åƒ•ãŒåå‰ã‚’å‘¼ã¶æ—¥ï¼HoneyWorks feat.GUMI');
+(1, '┗|∵|┓金曜日のおはよう／HoneyWorks feat.GUMI'),
+(2, '┗|∵|┓セツナトリップ／HoneyWorks REMIX feat.鏡音レン'),
+(3, '┗|∵|┓吉田、家出するってよ／HoneyWorks feat.初音ミク'),
+(4, '┗|∵|┓ラズベリー＊モンスター／HoneyWorks feat.初音ミク'),
+(5, '┗|∵|┓僕が名前を呼ぶ日／HoneyWorks feat.GUMI'),
+(7, 'センパイ。歌ってみた / 鎖那');
 
 -- --------------------------------------------------------
 
@@ -50,7 +51,7 @@ INSERT INTO `data` (`id`, `text`) VALUES
 
 CREATE TABLE `users` (
   `user_id` int(11) NOT NULL,
-  `user_name` varchar(255) NOT NULL,
+  `user_name` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `user_pass` varchar(255) NOT NULL,
   `user_role` enum('default','admin','developer') NOT NULL DEFAULT 'default'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -88,7 +89,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `data`
 --
 ALTER TABLE `data`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
 -- AUTO_INCREMENT for table `users`
 --
