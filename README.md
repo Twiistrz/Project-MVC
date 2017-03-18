@@ -1,15 +1,12 @@
 ![alt text](https://github.com/Twiistrz/Project-MVC/blob/master/assets/img/logo.png)
 
-
-## Requirements
+Requirements
 ------------
-
 A PHP 7.0 (or equivalent) environment
 MySQL 5.7+
 
-## Deploying
+Deploying
 ------------
-
 ### Database
 Use `database.sql` to create a table in your database and edit `config/database.php` file.
 ```php
