@@ -39,11 +39,21 @@
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<?php if(Session::get('loggedIn') == true): ?>
-					<li><a href="<?=HTTPHOST;?>dashboard/"><i class="fa fa-fw fa-tachometer text-primary">&nbsp;</i>Dashboard</a></li>
-						<?php if(Session::get('role') == 'developer'): ?>
-						<li><a href="<?=HTTPHOST;?>user/"><i class="fa fa-fw fa-users text-primary">&nbsp;</i>Users</a></li>
-						<?php endif; ?>
-					<li><a href="<?=HTTPHOST;?>dashboard/logout/"><i class="fa fa-fw fa-sign-out text-warning">&nbsp;</i>Log out</a></li>
+
+					<li><p class="navbar-text">Signed in as <?=Session::get('name');?></p></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="<?=HTTPHOST;?>dashboard/"><i class="fa fa-fw fa-tachometer text-primary">&nbsp;</i>Dashboard</a></li>
+							<?php if(Session::get('role') == 'developer'): ?>
+							<li><a href="<?=HTTPHOST;?>user/"><i class="fa fa-fw fa-users text-primary">&nbsp;</i>Users</a></li>
+							<?php endif; ?>
+							<li role="separator" class="divider"></li>
+							<li><a href="<?=HTTPHOST;?>dashboard/logout/"><i class="fa fa-fw fa-sign-out text-warning">&nbsp;</i>Log out</a></li>
+						</ul>
+					</li>
 					<?php else: ?>
 					<li><a href="<?=HTTPHOST;?>login/"><i class="fa fa-fw fa-sign-in text-primary">&nbsp;</i>Log in</a></li>
 					<?php endif; ?>
