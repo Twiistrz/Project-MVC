@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 18, 2017 at 03:19 AM
+-- Generation Time: Mar 18, 2017 at 03:46 AM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 5.6.30
 
@@ -36,8 +36,11 @@ CREATE TABLE `data` (
 --
 
 INSERT INTO `data` (`id`, `text`) VALUES
-(19, 'Emmanuel See Te'),
-(20, 'some text');
+(1, 'â”—|âˆµ|â”“é‡‘æ›œæ—¥ã®ãŠã¯ã‚ˆã†ï¼HoneyWorks feat.GUMI'),
+(2, 'â”—|âˆµ|â”“ã‚»ãƒ„ãƒŠãƒˆãƒªãƒƒãƒ—ï¼HoneyWorks REMIX feat.é¡éŸ³ãƒ¬ãƒ³'),
+(3, 'â”—|âˆµ|â”“å‰ç”°ã€å®¶å‡ºã™ã‚‹ã£ã¦ã‚ˆï¼HoneyWorks feat.åˆéŸ³ãƒŸã‚¯'),
+(4, 'â”—|âˆµ|â”“ãƒ©ã‚ºãƒ™ãƒªãƒ¼ï¼Šãƒ¢ãƒ³ã‚¹ã‚¿ãƒ¼ï¼HoneyWorks feat.åˆéŸ³ãƒŸã‚¯'),
+(5, 'â”—|âˆµ|â”“åƒ•ãŒåå‰ã‚’å‘¼ã¶æ—¥ï¼HoneyWorks feat.GUMI');
 
 -- --------------------------------------------------------
 
@@ -85,7 +88,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `data`
 --
 ALTER TABLE `data`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `users`
 --
