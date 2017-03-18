@@ -14,6 +14,7 @@ class Login_Model extends Model {
 		if($stmt->rowCount() > 0) :
 			// Success
 			Session::set('role', $row['user_role']);
+			Session::set('name', $row['user_name']);
 			Session::set('loggedIn', true);
 			return true;
 		endif;
