@@ -1,5 +1,6 @@
 ![alt text](https://github.com/Twiistrz/Project-MVC/blob/master/assets/img/logo.png)
 
+---
 Use `database.sql` to create a table in your database and edit `config/database.php` file.
 ```php
 // Database Configuration
@@ -19,25 +20,20 @@ define('DBPASS', '');
 // Database Name
 define('DBNAME', '');
 ```
-
+---
 Inside `.htaccess` file change the URL of Errors, Example below:
 ```htaccess
 ErrorDocument 404 http://localhost/project_mvc/error/page_404/
 ErrorDocument 401 http://localhost/project_mvc/error/page_401/
 ```
-
+---
 Users
-Developer:
-  Username: mannyseete
-  Password: admin
-  
-Admin:
-  Username: administrator
-  Password: admin
-  
-Default:
-  Username: default
-  Password: default
 
+| Role          | Username      | Password  |
+| ------------- | ------------- | --------- |
+| Developer     | mannyseete    | admin     |
+| Admin         | administrator | admin     |
+| Default       | default       | default   |
+---
 > This Project will be updated.
 > Copyright 2017 [Emmanuel See Te](https://emmanuelseete.xyz)
