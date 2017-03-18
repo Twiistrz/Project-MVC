@@ -1,0 +1,16 @@
+# Disabled for debugging
+#php_flag display_errors on
+#php_value error_reporting 0
+
+#Errors
+# Change this URL
+ErrorDocument 404 http://localhost/project_mvc/error/page_404/
+ErrorDocument 401 http://localhost/project_mvc/error/page_401/
+#/Errors
+
+RewriteEngine On
+RewriteRule ^$ index.php [QSA]
+#RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-l
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
