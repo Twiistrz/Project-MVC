@@ -1,6 +1,6 @@
 ![alt text](https://github.com/Twiistrz/Project-MVC/blob/master/assets/img/logo.png)
 
-
+![Build Status](https://api.travis-ci.org/Twiistrz/Dividers.svg?branch=master)
 
 Use `database.sql` to create a table in your database and edit `config/database.php` file.
 ```php
