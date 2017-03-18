@@ -10,22 +10,11 @@ Deploying
 ### Database
 Use `database.sql` to create a table in your database and edit `config/database.php` file.
 ```php
-// Database Configuration
-
-// Database Type
-define('DBTYPE', '');
-
-// Database Host
-define('DBHOST', '');
-
-// Database Username
-define('DBUSER', '');
-
-// Database Password
-define('DBPASS', '');
-
-// Database Name
-define('DBNAME', '');
+define('DBTYPE', ''); // Database Type
+define('DBHOST', ''); // Database Host
+define('DBUSER', ''); // Database Username
+define('DBPASS', ''); // Database Password
+define('DBNAME', ''); // Database Name
 ```
 
 ### Config
@@ -44,7 +33,7 @@ ErrorDocument 401 http://localhost/project_mvc/error/page_401/
 
 Seeking Help
 ------------
-### Create an issue
+#### Create an issue
 If you have something you want to discuss in detail, or have hit an issue which you believe others will also have in deployment or development on the system, [opening an issue](https://github.com/Twiistrz/Project-MVC/issues) is the best way to get help. It creates a permanent resource for others wishing to contribute to conversation. Please **make sure to search first** in case someone else has already addressed the same issue!
 
 ------------
