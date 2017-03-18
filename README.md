@@ -1,4 +1,4 @@
-# Project MVC
+![alt tag](https://github.com/Twiistrz/Project-MVC/blob/master/assets/img/logo.png)
 Model - View - Controller
 
 Use `database.sql` to create a table in your database and edit `config/database.php` file.
