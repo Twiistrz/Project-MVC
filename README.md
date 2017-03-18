@@ -27,5 +27,18 @@ ErrorDocument 404 http://localhost/project_mvc/error/page_404/
 ErrorDocument 401 http://localhost/project_mvc/error/page_401/
 ```
 
+Users
+Developer:
+  Username: mannyseete
+  Password: admin
+  
+Admin:
+  Username: administrator
+  Password: admin
+  
+Default:
+  Username: default
+  Password: default
+
 > This Project will be updated.
 > Copyright 2017 [Emmanuel See Te](https://emmanuelseete.xyz)
