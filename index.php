@@ -1,0 +1,16 @@
+<?php 
+
+// Libraries
+require 'libs/bootstrap.php';
+require 'libs/controller.php';
+require 'libs/model.php';
+require 'libs/view.php';
+require 'libs/database.php';
+require 'libs/session.php';
+
+// Configs
+require 'config/paths.php';
+require 'config/database.php';
+
+Session::init();
+$app = new Bootstrap();
