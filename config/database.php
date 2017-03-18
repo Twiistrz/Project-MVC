@@ -2,16 +2,16 @@
 // Database Configuration
 
 // Database Type
-define('DBTYPE', 'mysql');
+define('DBTYPE', '');
 
 // Database Host
-define('DBHOST', 'localhost');
+define('DBHOST', '');
 
 // Database Username
-define('DBUSER', 'root');
+define('DBUSER', '');
 
 // Database Password
 define('DBPASS', '');
 
 // Database Name
-define('DBNAME', 'db_projectmvc');
+define('DBNAME', '');
